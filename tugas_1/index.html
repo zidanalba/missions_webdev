@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission 1 - Tugas 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        font-size: larger;
+        grid-template-areas:
+          "merah hijau hijau ungu ungu"
+          "merah pink hijau-muda hijau-muda hijau-muda"
+          "merah pink biru biru-tua biru-tua"
+          "jingga pink biru biru-tua biru-tua"
+          "jingga kuning kuning biru-tua biru-tua"
+          "jingga kuning kuning biru-tua biru-tua";
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .merah {
+        grid-area: merah;
+      }
+
+      .boks-merah {
+        background-color: #e06665;
+      }
+
+      .boks-hijau {
+        background-color: #00a15d;
+      }
+
+      .boks-ungu {
+        background-color: #8d7cc3;
+      }
+
+      .boks-orange {
+        background-color: #ffc801;
+      }
+
+      .boks-kuning {
+        background-color: #ffff01;
+      }
+
+      .boks-biru {
+        background-color: #3e85c7;
+      }
+
+      .boks-pink {
+        background-color: #ff9fd5;
+      }
+
+      .boks-hijau-muda {
+        background-color: #fed849;
+      }
+
+      .teks-kuning {
+        color: yellow;
+      }
+
+      .hijau {
+        grid-area: hijau;
+      }
+      .ungu {
+        grid-area: ungu;
+      }
+      .pink {
+        grid-area: pink;
+      }
+      .hijau-muda {
+        grid-area: hijau-muda;
+      }
+      .biru {
+        grid-area: biru;
+      }
+      .jingga {
+        grid-area: jingga;
+      }
+      .kuning {
+        grid-area: kuning;
+      }
+      .biru-tua {
+        grid-area: biru-tua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item merah boks-merah teks-kuning">Merah</div>
+      <div class="item hijau boks-hijau">Hijau</div>
+      <div class="item ungu boks-ungu">Ungu</div>
+      <div class="item pink boks-pink">Pink</div>
+      <div class="item hijau-muda boks-hijau-muda">Hijau Muda</div>
+      <div class="item biru boks-hijau">Biru</div>
+      <div class="item jingga boks-orange">Jingga</div>
+      <div class="item kuning boks-kuning">Kuning</div>
+      <div class="item biru-tua boks-biru teks-kuning">Biru Tua</div>
+    </div>
+  </body>
+</html>
