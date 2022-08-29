@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+}
+
+.container {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.navbar {
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar-items {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.content > * {
+  margin: 8% 9%;
+}
+
+.user-interactive {
+  padding: 2rem;
+}
+
+.user-interactive > * {
+  margin: 8px;
+}
+
+.user-interactive-title {
+  font-size: 20pt;
+}
+
+.user-interactive-desc {
+  font-size: 16pt;
+}
+
+.white-button-template {
+  background-color: white;
+  border: 0;
+  padding: 10px;
+}
+
+.lessons {
+  height: 40%;
+}
+
+.lessons-margin-top-bottom {
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+}
+
+.lessons-pict-img-size {
+  max-width: 128px;
+  width: max-content;
+  height: max-content;
+  justify-content: center;
+}
+
+.lessons-content {
+  padding-left: 2%;
+}
+
+.lessons-title {
+  font-size: 22pt;
+}
+
+.lessons-desc {
+  font-size: 18pt;
+}
+
+.join-page {
+  max-width: 40%;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  max-width: 75%;
+  height: 100px;
+  width: auto;
+}
+
+.footer-margin-left {
+  margin-left: 5%;
+}
+
+.footer-margin-right {
+  margin-right: 5%;
+}
+
+.footer-margin {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.join-button {
+  background-color: #65d777;
+  color: white;
+}
+
+.no-border {
+  border: 0;
+}
+
+.small-font {
+  font-size: 14pt;
+}
+
+.lessons-author-pp-template {
+  border-radius: 90pt;
+  max-width: 40px;
+  margin-left: 5pt;
+}
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.grey-bg {
+  background-color: #e8ecef;
+}
+
+.border-radius {
+  border-radius: 3pt;
+}
+
+.grey-font {
+  color: #7e878c;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+.light-font {
+  font-weight: lighter;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.azalea {
+  color: #da3e25;
+}
