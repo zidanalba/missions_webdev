@@ -10,30 +10,45 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <div class="whitebg container-md">
-      <nav class="navbar navbar-dark bg-dark">
+    <div class="whitebg">
+      <nav class="navbar navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img id="logo" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
-            Bootstrap
           </a>
         </div>
       </nav>
       <div class="content">
         <section>
-          <div class="hero">
-            <img src="./assets/hero.jpg" alt="" />
+          <div class="hero position-relative">
+            <img class="rounded" src="./assets/hero.jpg" alt="" />
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <div class="profile row justify-content-center">
+                <img class="pPicture rounded-circle" src="./assets/myPhoto.jpeg" alt="" />
+                <div class="pInfo">
+                  <div class="pName"></div>
+                  <div class="pDesc"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- identity nanti taro sini -->
+          <!-- <div class="identity card mb-3 text-bg-dark d-flex">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img class="profilePhoto img-fluid rounded-circle border-dark border-opacity-50 border-5" src="./assets/myPhoto.jpeg" alt="" />
+              </div>
+              <div class="profileBio col-md-8">
+                <div class="card-body">
+                  <div class="nama card-title">Mochammad Zidan Al-Baihaqi</div>
+                  <div class="desc card-text">Software Engineer Student in Politeknik Negeri Bandung</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </section>
-        <div class="identity text-bg-dark">
-          <img class="profilePhoto" src="./assets/myPhoto.jpeg" alt="" />
-          <div class="nama">Mochammad Zidan Al-Baihaqi</div>
-          <div class="desc">Software Engineer Student in Politeknik Negeri Bandung</div>
-        </div>
       </div>
     </div>
-    <div class="blackSlider"></div>
+    <div class="blackSlider bg-dark"></div>
 
     <script src="./assets/script.js"></script>
   </body>
