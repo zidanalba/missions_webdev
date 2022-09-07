@@ -1,12 +1,12 @@
-const logo = document.getElementById("logo");
-const pPict = document.getElementsByClassName("pPicture");
+const profile = document.getElementById("pPicture");
+const profileContainer = document.getElementById("profile");
 
 function hero() {
   const hero = document.querySelector(".hero");
   let heroHeight = 0;
   let heroWidth = 100;
   var heroInterval = setInterval(() => {
-    if (heroHeight == 75) {
+    if (heroHeight >= 75) {
       clearInterval(heroInterval);
     } else {
       heroHeight++;
@@ -15,7 +15,7 @@ function hero() {
   }, 5);
 
   var heroInterval2 = setInterval(() => {
-    if (heroHeight == 100) {
+    if (heroHeight >= 100) {
       clearInterval(heroInterval2);
     } else {
       heroHeight++;
@@ -24,7 +24,7 @@ function hero() {
   }, 15);
   setTimeout(() => {
     var heroWidthInterval = setInterval(() => {
-      if (heroWidth == 90) {
+      if (heroWidth <= 90) {
         clearInterval(heroWidthInterval);
       } else {
         heroWidth--;
@@ -32,7 +32,7 @@ function hero() {
       }
     }, 15);
     var heroWidthInterval2 = setInterval(() => {
-      if (heroWidth == 75) {
+      if (heroWidth <= 75) {
         clearInterval(heroWidthInterval2);
       } else {
         heroWidth--;
@@ -48,7 +48,7 @@ function slider() {
   let sliderXPos = 0;
 
   var sliderWidthInterval = setInterval(() => {
-    if (sliderXPos == 50) {
+    if (sliderXPos >= 50) {
       clearInterval(sliderWidthInterval);
     } else {
       sliderXPos++;
@@ -57,7 +57,7 @@ function slider() {
   }, 25);
 
   var sliderWidthIntervali = setInterval(() => {
-    if (sliderXPos == 100) {
+    if (sliderXPos >= 100) {
       clearInterval(sliderWidthIntervali);
     } else {
       sliderXPos++;
@@ -67,25 +67,83 @@ function slider() {
 }
 
 function profileFadeIn() {
-  const pPict = document.getElementsByClassName("pPicture");
+  const pPict = document.getElementById("pPicture");
+  let op = 0;
+
+  fadeIn = setInterval(() => {
+    if (op >= 1) {
+      clearInterval(fadeIn);
+    } else {
+      op = op + 0.01;
+      pPict.style.opacity = op;
+    }
+  }, 25);
+}
+
+function logoFadeIn() {
+  const logo = document.getElementById("logo");
   let op = 0;
 
   fadeIn = setInterval(() => {
     if (op == 1) {
       clearInterval(fadeIn);
     } else {
-      op++;
-      pPict.style.opacity = op;
+      op = op + 0.01;
+      logo.style.opacity = op;
     }
-  }, 25);
+  }, 15);
+}
+
+function instaLogoFadeIn() {
+  const insta = document.getElementById("insta");
+  let op = 0;
+
+  fadeIn = setInterval(() => {
+    if (op == 1) {
+      clearInterval(fadeIn);
+    } else {
+      op = op + 0.01;
+      insta.style.opacity = op;
+    }
+  }, 15);
+}
+
+function githubLogoFadeIn() {
+  const github = document.getElementById("github");
+  let op = 0;
+
+  fadeIn = setInterval(() => {
+    if (op == 1) {
+      clearInterval(fadeIn);
+    } else {
+      op = op + 0.01;
+      github.style.opacity = op;
+    }
+  }, 15);
+}
+
+function profileHover() {
+  profileContainer.style.backgroundColor = "yellow";
+  profileContainer.classList.add("rounded");
+  profileContainer.classList.remove("justify-content-center");
+  profileContainer.style.justifyContent = "flex-start";
+  let pName = Document.getElementById("pName");
+  pName.innerHTML += "Mochammad Zidan Al-Baihaqi";
+  let pDesc = Document.getElementById("pDesc");
 }
 
 function landing() {
   hero();
 
   setTimeout(slider, 1200);
-
-  profileFadeIn();
+  setTimeout(logoFadeIn, 1400);
+  setTimeout(instaLogoFadeIn, 3200);
+  setTimeout(githubLogoFadeIn, 3300);
+  setTimeout(profileFadeIn, 2500);
 }
 
 window.onload = landing();
+profile.addEventListener("mouseover", profileHover);
+profile.addEventListener("mouseleave", () => {
+  console.log("keluar");
+});
